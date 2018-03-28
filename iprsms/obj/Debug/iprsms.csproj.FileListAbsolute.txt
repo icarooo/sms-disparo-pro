@@ -1,0 +1,10 @@
+c:\users\icaro.rodrigues\documents\visual studio 2013\Projects\iprsms\iprsms\bin\Debug\iprsms.exe.config
+c:\users\icaro.rodrigues\documents\visual studio 2013\Projects\iprsms\iprsms\bin\Debug\iprsms.exe
+c:\users\icaro.rodrigues\documents\visual studio 2013\Projects\iprsms\iprsms\bin\Debug\iprsms.pdb
+c:\users\icaro.rodrigues\documents\visual studio 2013\Projects\iprsms\iprsms\bin\Debug\Newtonsoft.Json.dll
+c:\users\icaro.rodrigues\documents\visual studio 2013\Projects\iprsms\iprsms\bin\Debug\RestSharp.dll
+c:\users\icaro.rodrigues\documents\visual studio 2013\Projects\iprsms\iprsms\bin\Debug\Newtonsoft.Json.xml
+c:\users\icaro.rodrigues\documents\visual studio 2013\Projects\iprsms\iprsms\bin\Debug\RestSharp.xml
+c:\users\icaro.rodrigues\documents\visual studio 2013\Projects\iprsms\iprsms\obj\Debug\iprsms.csprojResolveAssemblyReference.cache
+c:\users\icaro.rodrigues\documents\visual studio 2013\Projects\iprsms\iprsms\obj\Debug\iprsms.exe
+c:\users\icaro.rodrigues\documents\visual studio 2013\Projects\iprsms\iprsms\obj\Debug\iprsms.pdb
