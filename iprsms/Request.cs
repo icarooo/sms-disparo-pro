@@ -40,10 +40,15 @@ namespace iprsms
             string json,numero;
             foreach (Response t in this.sms)
             {
+                RestClient client2 = new RestClient();
+                RestRequest request2 = new RestRequest();
+                request2.AddHeader("authorization", "Bearer a4f2fdf25058d5c1d7f47b6ed3d77b13c5ab5da5");
+                request2.Method = Method.POST;
                 numero = "55" + t.telefone.Replace("(", "").Replace(")", "").Replace("-", "");
-                json = "[{ \"numero\": \"55" + t.telefone.Replace("(", "").Replace(")", "").Replace("-", "") + "\",\"mensagem\":\"IPR Informa: " + t.texto + "\",\"servico\":\"long\"}]";
-                request.AddParameter("application/json", json, ParameterType.RequestBody);
-                IRestResponse response = client.Execute(request);
+                json = "[{ \"numero\": \"55" + t.telefone.Replace("(", "").Replace(")", "").Replace("-", "") + "\",\"mensagem\":\"IPR Internet: " + t.texto + "\",\"servico\":\"short\"}]";
+                Console.WriteLine(json);
+                request2.AddParameter("application/json", json, ParameterType.RequestBody);
+                IRestResponse response = client.Execute(request2);
                 Console.WriteLine(response.Content);
             }
 
