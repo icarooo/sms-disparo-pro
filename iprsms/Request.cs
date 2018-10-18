@@ -16,7 +16,7 @@ namespace iprsms
         public string saldo;
         public Request()
         {
-            request.AddHeader("authorization", "Bearer a4f2fdf25058d5c1d7f47b6ed3d77b13c5ab5da5");
+            request.AddHeader("authorization", "Bearer token");
             this.getSaldo();
             this.getSms();
         }
@@ -29,7 +29,7 @@ namespace iprsms
         }
         public void getSms()
         {
-            client.BaseUrl = new Uri("http://ipr.net.br/sms/app/controller/receber.php");
+            client.BaseUrl = new Uri("http://url/sms/app/controller/receber.php");
             request.Method = Method.GET;
             this.sms = JsonConvert.DeserializeObject<List<Response>>(client.Execute(request).Content);
         }
@@ -42,7 +42,7 @@ namespace iprsms
             {
                 RestClient client2 = new RestClient();
                 RestRequest request2 = new RestRequest();
-                request2.AddHeader("authorization", "Bearer a4f2fdf25058d5c1d7f47b6ed3d77b13c5ab5da5");
+                request2.AddHeader("authorization", "Bearer token");
                 request2.Method = Method.POST;
                 numero = "55" + t.telefone.Replace("(", "").Replace(")", "").Replace("-", "");
                 json = "[{ \"numero\": \"55" + t.telefone.Replace("(", "").Replace(")", "").Replace("-", "") + "\",\"mensagem\":\"IPR Internet: " + t.texto + "\",\"servico\":\"short\"}]";
